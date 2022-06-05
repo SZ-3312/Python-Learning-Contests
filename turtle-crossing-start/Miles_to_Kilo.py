@@ -10,7 +10,7 @@ def mile_to_km():
 window = Tk()
 window.title("Miles to Kilometers Converter")
 window.config(padx=20, pady=20)
-window.minsize(width=400, height=100)
+window.minsize(width=350, height=100)
 
 miles_input = Entry(width=7)
 miles_input.grid(column=1, row=0)
