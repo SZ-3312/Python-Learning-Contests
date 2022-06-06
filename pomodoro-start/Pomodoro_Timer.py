@@ -1,6 +1,7 @@
 from tkinter import *
 from time import *
 import math
+
 # Constants
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -45,7 +46,7 @@ def start_timer():
 
 
 def countdown(count):
-    global timer
+    global timer, reps
     seconds = count % 60
     minutes = (count - seconds) // 60
 
@@ -61,8 +62,12 @@ def countdown(count):
         start_timer()
         marks = ""
         work_sessions = math.floor(reps/2)
+        if work_sessions > 4:
+            work_sessions = 0
+            reps = 1
+
         for i in range(work_sessions):
-            marks += "✔"
+            marks += "✔ "
         check_marks.config(text=marks)
 
 
