@@ -1,3 +1,4 @@
+import os.path
 from tkinter import *
 from time import *
 import math
@@ -26,6 +27,7 @@ def restart():
 
 def start_timer():
     global reps
+    restart()
     work_sec = WORK_MIN * 60
     short_break = SHORT_BREAK_MIN * 60
     long_break = LONG_BREAK_MIN * 60

@@ -7,4 +7,4 @@ def calc(amount):
 
 
 if __name__ == '__main__':
-    print(calc(244188))
+    print(calc(80849))
